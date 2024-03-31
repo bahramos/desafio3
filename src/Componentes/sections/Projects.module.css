@@ -1,0 +1,17 @@
+.projects{
+    margin-left: 75px;
+    display: flex;
+    padding: 10px;
+    
+}
+
+.img{
+
+    width: 400px;
+}
+
+.projects h1{
+    font-size: 45px;
+    text-align: justify;
+}
+

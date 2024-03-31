@@ -1,0 +1,23 @@
+.footer{
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    text-align: justify;
+    padding: 1em;
+    justify-content: center;
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.footer a{
+    color: aliceblue !important;
+}
+
+.footer li{
+    margin: 15px;
+    list-style: none;
+}

@@ -1,0 +1,49 @@
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding: 20px;
+  margin-top: 20px; /* Garantir espaço no topo para a linha */
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 38px; /* Ajuste para alinhar com o centro dos marcadores */
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ddd;
+  z-index: 1;
+}
+.timeline-item {
+  position: relative;
+  width: 200px;
+  margin: 20px; /* Ajuste para garantir espaço para o marcador */
+  padding-top: 5px; /* Espaço no topo para o marcador */
+  z-index: 2;
+  display: flex; /* Garante que o item da linha do tempo é flexível */
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+.timeline-item .timeline-content {
+  position: relative; /* Relativo ao item da linha do tempo */
+  text-align: center; /* Garante que o texto esteja centralizado */
+  z-index: 2;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 3;
+}
+
